@@ -1,0 +1,30 @@
+<phpunit bootstrap="./tests/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         verbose="true"
+         stopOnFailure="false"
+         processIsolation="false"
+         backupGlobals="false"
+         syntaxCheck="true"
+>
+    <testsuite name="Eye4webZfcUserWarningsTest Test Suite">
+        <directory>./tests/Eye4webZfcUserWarningsTest</directory>
+    </testsuite>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+            <exclude>
+                <file>./src/*/*Interface.php</file>
+                <file>./src/Eye4web/ZfcUser/Warnings/Entity/Warning.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+    
+    <logging>
+        <log type="coverage-text" target="php://stdout"/>
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+    </logging>
+</phpunit>

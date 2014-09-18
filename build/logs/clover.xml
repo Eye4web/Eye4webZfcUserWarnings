@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1411067669">
+  <project timestamp="1411067669">
+    <package name="Eye4web\ZfcUser\Warnings\Controller">
+      <file name="/vagrant/module/Eye4webZfcUserWarnings/src/Eye4web/ZfcUser/Warnings/Controller/WarningsController.php">
+        <class name="WarningsController" namespace="Eye4web\ZfcUser\Warnings\Controller">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
+        </class>
+        <line num="29" type="method" name="__construct" crap="1" count="4"/>
+        <line num="31" type="stmt" count="4"/>
+        <line num="32" type="stmt" count="4"/>
+        <line num="34" type="method" name="userWarningsAction" crap="2" count="2"/>
+        <line num="36" type="stmt" count="2"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <metrics loc="50" ncloc="34" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
+      </file>
+    </package>
+    <package name="Eye4web\ZfcUser\Warnings\Factory\Controller">
+      <file name="/vagrant/module/Eye4webZfcUserWarnings/src/Eye4web/ZfcUser/Warnings/Factory/Controller/WarningsControllerFactory.php">
+        <class name="WarningsControllerFactory" namespace="Eye4web\ZfcUser\Warnings\Factory\Controller">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="31" type="method" name="createService" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <metrics loc="43" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+    </package>
+    <package name="Eye4web\ZfcUser\Warnings\Factory\Mapper">
+      <file name="/vagrant/module/Eye4webZfcUserWarnings/src/Eye4web/ZfcUser/Warnings/Factory/Mapper/DoctrineORMMapperFactory.php">
+        <class name="DoctrineORMMapperFactory" namespace="Eye4web\ZfcUser\Warnings\Factory\Mapper">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+        </class>
+        <line num="30" type="method" name="createService" crap="1" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <metrics loc="39" ncloc="19" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </file>
+    </package>
+    <package name="Eye4web\ZfcUser\Warnings\Factory\Service">
+      <file name="/vagrant/module/Eye4webZfcUserWarnings/src/Eye4web/ZfcUser/Warnings/Factory/Service/WarningsServiceFactory.php">
+        <class name="WarningsServiceFactory" namespace="Eye4web\ZfcUser\Warnings\Factory\Service">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+        </class>
+        <line num="31" type="method" name="createService" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <metrics loc="40" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </file>
+    </package>
+    <package name="Eye4web\ZfcUser\Warnings\Factory\View\Helper">
+      <file name="/vagrant/module/Eye4webZfcUserWarnings/src/Eye4web/ZfcUser/Warnings/Factory/View/Helper/ZfcUserDisplayNameByUserIdFactory.php">
+        <class name="ZfcUserDisplayNameByUserIdFactory" namespace="Eye4web\ZfcUser\Warnings\Factory\View\Helper">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+        </class>
+        <line num="30" type="method" name="createService" crap="1" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <metrics loc="41" ncloc="21" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="5" coveredelements="5"/>
+      </file>
+    </package>
+    <package name="Eye4web\ZfcUser\Warnings\Mapper">
+      <file name="/vagrant/module/Eye4webZfcUserWarnings/src/Eye4web/ZfcUser/Warnings/Mapper/DoctrineORMMapper.php">
+        <class name="DoctrineORMMapper" namespace="Eye4web\ZfcUser\Warnings\Mapper">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
+        </class>
+        <line num="30" type="method" name="__construct" crap="1" count="5"/>
+        <line num="31" type="stmt" count="5"/>
+        <line num="32" type="stmt" count="5"/>
+        <line num="34" type="method" name="addWarning" crap="2" count="2"/>
+        <line num="36" type="stmt" count="2"/>
+        <line num="37" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="2"/>
+        <line num="44" type="method" name="getUserWarnings" crap="1" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="51" type="method" name="getWarning" crap="1" count="1"/>
+        <line num="53" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <metrics loc="58" ncloc="41" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
+      </file>
+    </package>
+    <package name="Eye4web\ZfcUser\Warnings">
+      <file name="/vagrant/module/Eye4webZfcUserWarnings/src/Eye4web/ZfcUser/Warnings/Module.php">
+        <class name="Module" namespace="Eye4web\ZfcUser\Warnings">
+          <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="26" type="method" name="getConfig" crap="1" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <metrics loc="30" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+    </package>
+    <package name="Eye4web\ZfcUser\Warnings\Service">
+      <file name="/vagrant/module/Eye4webZfcUserWarnings/src/Eye4web/ZfcUser/Warnings/Service/WarningsService.php">
+        <class name="WarningsService" namespace="Eye4web\ZfcUser\Warnings\Service">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="10" coveredelements="10"/>
+        </class>
+        <line num="32" type="method" name="__construct" crap="1" count="4"/>
+        <line num="34" type="stmt" count="4"/>
+        <line num="35" type="stmt" count="4"/>
+        <line num="37" type="method" name="addWarning" crap="1" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="42" type="method" name="getWarning" crap="1" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="47" type="method" name="getUserWarnings" crap="1" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <metrics loc="53" ncloc="34" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="10" coveredelements="10"/>
+      </file>
+    </package>
+    <package name="Eye4web\ZfcUser\Warnings\View\Helper">
+      <file name="/vagrant/module/Eye4webZfcUserWarnings/src/Eye4web/ZfcUser/Warnings/View/Helper/ZfcUserDisplayNameByUserId.php">
+        <class name="ZfcUserDisplayNameByUserId" namespace="Eye4web\ZfcUser\Warnings\View\Helper">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+        </class>
+        <line num="31" type="method" name="__construct" crap="1" count="2"/>
+        <line num="33" type="stmt" count="2"/>
+        <line num="34" type="stmt" count="2"/>
+        <line num="36" type="method" name="__invoke" crap="1" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <metrics loc="42" ncloc="23" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
+      </file>
+    </package>
+    <metrics files="9" loc="396" ncloc="228" classes="9" methods="17" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="46" elements="63" coveredelements="63"/>
+  </project>
+</coverage>

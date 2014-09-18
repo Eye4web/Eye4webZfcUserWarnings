@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="Eye4web\ZfcUser\Warnings\Entity\Warning" table="user_warnings">
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO" />
+        </id>
+
+        <field name="user" type="integer" length="11"  />
+        <field name="by" type="integer" length="11" />
+        <field name="date" type="datetime" />
+        <field name="reason" type="string" length="255" />
+        <field name="weight" type="integer" length="5" />
+    </entity>
+
+</doctrine-mapping>

@@ -1,0 +1,42 @@
+{
+    "name": "eye4web/eye4web-zfc-user-warnings",
+    "description": "Adds the functionality to give your users warnings",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "zf2",
+        "ZfcUser",
+        "module"
+    ],
+    "homepage": "https://github.com/Eye4web/Eye4webZfcUserWarnings",
+    "authors": [
+        {
+            "name": "Daniel Strøm",
+            "email": "ds@eye4web.dk"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master-dev"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "zf-commons/zfc-user": "1.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Eye4web\\ZfcUser\\Warnings": "src/"
+        },
+        "classmap": [
+            "./src/Eye4web/ZfcUser/Warnings/Module.php"
+        ]
+    },
+    "require-dev" : {
+        "doctrine/doctrine-orm-module": "0.*",
+        "phpunit/phpunit" : "4.*",
+        "squizlabs/php_codesniffer" : "1.5.*",
+        "zendframework/zend-captcha" : "~2.1",
+        "codeclimate/php-test-reporter": "dev-master"
+    }
+}
