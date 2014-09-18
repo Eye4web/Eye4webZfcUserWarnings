@@ -24,7 +24,7 @@ interface WarningInterface
 
     public function getUser();
 
-    public function getBy();
+    public function getUserBy();
 
     public function getDate();
 

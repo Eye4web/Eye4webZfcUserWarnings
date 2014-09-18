@@ -21,9 +21,12 @@ namespace Eye4web\ZfcUser\Warnings\Service;
 use Eye4web\ZfcUser\Warnings\Entity\WarningInterface;
 use Eye4web\ZfcUser\Warnings\Mapper\MapperInterface;
 use ZfcUser\Entity\UserInterface;
+use Zend\EventManager\EventManagerAwareInterface;
+use Zend\EventManager\EventManagerAwareTrait;
 
-class WarningsService implements WarningsServiceInterface
+class WarningsService implements WarningsServiceInterface, EventManagerAwareInterface
 {
+    use EventManagerAwareTrait;
     /**
      * @var MapperInterface
      */
@@ -36,7 +39,9 @@ class WarningsService implements WarningsServiceInterface
 
     public function addWarning(WarningInterface $warning)
     {
+        $this->getEventManager()->trigger(__FUNCTION__ . '.pre', $this, array('warning' => $warning));
         $this->mapper->addWarning($warning);
+        $this->getEventManager()->trigger(__FUNCTION__ . '.post', $this, array('warning' => $warning));
     }
 
     public function getWarning($id)

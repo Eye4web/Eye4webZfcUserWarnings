@@ -24,7 +24,7 @@ class Warning implements WarningInterface
 
     protected $user;
 
-    protected $by;
+    protected $userBy;
 
     protected $date;
 
@@ -32,20 +32,26 @@ class Warning implements WarningInterface
 
     protected $weight;
 
+    public function __construct()
+    {
+        $this->weight = 1;
+        $this->date = new \DateTime();
+    }
+
     /**
      * @param mixed $by
      */
-    public function setBy($by)
+    public function setUserBy($by)
     {
-        $this->by = $by;
+        $this->userBy = $by;
     }
 
     /**
      * @return mixed
      */
-    public function getBy()
+    public function getUserBy()
     {
-        return $this->by;
+        return $this->userBy;
     }
 
     /**
