@@ -21,9 +21,12 @@ namespace Eye4web\ZfcUser\Warnings\Mapper;
 use Doctrine\Common\Persistence\ObjectManager;
 use Eye4web\ZfcUser\Warnings\Entity\WarningInterface;
 use ZfcUser\Entity\UserInterface;
+use Zend\EventManager\EventManagerAwareInterface;
+use Zend\EventManager\EventManagerAwareTrait;
 
-class DoctrineORMMapper implements MapperInterface
+class DoctrineORMMapper implements MapperInterface, EventManagerAwareInterface
 {
+    use EventManagerAwareTrait;
     /** @var \Doctrine\ORM\EntityManager */
     protected $objectManager;
 
@@ -34,10 +37,14 @@ class DoctrineORMMapper implements MapperInterface
 
     public function addWarning(WarningInterface $warning, $flush = true)
     {
+        $this->getEventManager()->trigger('addWarning.pre', $this, array('warning' => $warning));
+
         $this->objectManager->persist($warning);
         if ($flush) {
             $this->objectManager->flush();
         }
+
+        $this->getEventManager()->trigger('addWarning.post', $this, array('warning' => $warning));
 
         return $warning;
     }
