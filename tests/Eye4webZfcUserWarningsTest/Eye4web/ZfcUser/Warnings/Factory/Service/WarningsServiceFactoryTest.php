@@ -18,7 +18,6 @@
 
 namespace Eye4webZfcUserWarningsTest\Eye4web\ZfcUser\Warnings\Factory\Service;
 
-
 use Eye4web\ZfcUser\Warnings\Factory\Service\WarningsServiceFactory;
 
 class WarningsServiceFactoryTest extends \PHPUnit_Framework_TestCase
