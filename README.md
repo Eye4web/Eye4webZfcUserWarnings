@@ -45,14 +45,4 @@ Installation
 
 Ban User after X warnings
 ==============
-If you want to ban the user after X warnings you can make user of Eye4webZfcUserBan.
-All you have to do i listen for the addwarning event in your Module::onBootstrap
-
-```php
-    $events = $e->getApplication()->getEventManager()->getSharedManager();
-    $events->attach('Eye4web\ZfcUser\Warnings\Service\WarningsService', 'addWarning.post', function($e) {
-        $warning = $e->getParam('warning');
-
-        // Add logic to ban user
-    });
-```
+If you want to ban the user after X warnings you can make user of [Eye4webZfcUserBan](https://github.com/Eye4web/Eye4webZfcUserWarningsBan).
