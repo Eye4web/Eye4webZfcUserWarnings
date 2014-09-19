@@ -45,4 +45,4 @@ Installation
 
 Ban User after X warnings
 ==============
-If you want to ban the user after X warnings you can make user of [Eye4webZfcUserBan](https://github.com/Eye4web/Eye4webZfcUserWarningsBan).
+If you want to ban the user after X warnings you can make user of [Eye4webZfcUserWarningsBan](https://github.com/Eye4web/Eye4webZfcUserWarningsBan).
