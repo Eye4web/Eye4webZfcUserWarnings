@@ -33,7 +33,7 @@
         foreach ($this->warnings as $warning) {
             echo '<tr>
                 <td>' . $warning->getDate()->format('d-m-y H:i') . '</td>
-                <td>' . $this->ZfcUserDisplayNameByUserId($warning->getBy()) . '</td>
+                <td>' . $this->ZfcUserDisplayNameByUserId($warning->getUserBy()) . '</td>
                 <td>' . $this->escapeHtml($warning->getReason()) . '</td>
                 <td>' . $warning->getWeight() . '</td>
             </tr>';
