@@ -9,8 +9,8 @@
             <generator strategy="AUTO" />
         </id>
 
-        <field name="user" type="integer" length="11"  />
-        <field name="userBy" type="integer" length="11" />
+        <field name="user" type="string" length="36"  />
+        <field name="userBy" type="string" length="36" />
         <field name="date" type="datetime" />
         <field name="reason" type="string" length="255" />
         <field name="weight" type="integer" length="5" />
