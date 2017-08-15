@@ -12,7 +12,7 @@
         <field name="user" type="string" length="36"  />
         <field name="userBy" type="string" length="36" />
         <field name="date" type="datetime" />
-        <field name="reason" type="string" length="255" />
+        <field name="reason" type="text" />
         <field name="weight" type="integer" length="5" />
     </entity>
 
