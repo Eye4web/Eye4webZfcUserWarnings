@@ -23,15 +23,15 @@ use Eye4web\ZfcUser\Warnings\Service\WarningsServiceInterface;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
-class WarningsControllerFactory implements FactoryInterface
+class WarningsControllerFactory implements \Zend\ServiceManager\Factory\FactoryInterface
 {
     /**
      * {@inheritdoc}
      */
-    public function createService(ServiceLocatorInterface $controllerManager)
+    public function __invoke(\Interop\Container\ContainerInterface $controllerManager, $requestedName, array $options = null)
     {
         /** @var ServiceLocatorInterface $serviceLocator */
-        $serviceLocator = $controllerManager->getServiceLocator();
+        $serviceLocator = $controllerManager;
 
         /** @var WarningsServiceInterface $warningsService */
         $warningsService = $serviceLocator->get('Eye4web\ZfcUser\Warnings\Service\WarningsService');
