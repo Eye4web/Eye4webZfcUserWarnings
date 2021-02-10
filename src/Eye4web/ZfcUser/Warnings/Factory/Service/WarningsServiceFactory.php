@@ -31,7 +31,7 @@ class WarningsServiceFactory implements \Zend\ServiceManager\Factory\FactoryInte
     public function __invoke(\Interop\Container\ContainerInterface $assertionPluginManager, $requestedName, array $options = null)
     {
         /** @var MapperInterface $mapper */
-        $mapper = $serviceManager->get('Eye4web\ZfcUser\Warnings\Mapper');
+        $mapper = $assertionPluginManager->get('Eye4web\ZfcUser\Warnings\Mapper');
 
         $service = new WarningsService($mapper);
 
