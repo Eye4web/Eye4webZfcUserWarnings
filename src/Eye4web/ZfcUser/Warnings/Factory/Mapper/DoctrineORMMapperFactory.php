@@ -22,12 +22,12 @@ use Eye4web\ZfcUser\Warnings\Mapper\DoctrineORMMapper;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
-class DoctrineORMMapperFactory implements FactoryInterface
+class DoctrineORMMapperFactory implements \Zend\ServiceManager\Factory\FactoryInterface
 {
     /**
      * {@inheritdoc}
      */
-    public function createService(ServiceLocatorInterface $serviceManager)
+    public function __invoke(\Psr\Container\ContainerInterface $serviceManager, $requestedName, array $options = null)
     {
         /** @var \Doctrine\ORM\EntityManager $objectManager */
         $objectManager = $serviceManager->get('Doctrine\ORM\EntityManager');

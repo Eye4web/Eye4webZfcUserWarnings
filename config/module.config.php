@@ -4,7 +4,7 @@ return [
     'router' => [
         'routes' => [
             'eye4web_zfcuser_warnings' => [
-                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'type' => 'Zend\Router\Http\Literal',
                 'options' => [
                     'route'    => '/user/warnings',
                     'defaults' => [
