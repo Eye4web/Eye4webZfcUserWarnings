@@ -28,7 +28,7 @@ class WarningsControllerFactory implements \Zend\ServiceManager\Factory\FactoryI
     /**
      * {@inheritdoc}
      */
-    public function __invoke(\Interop\Container\ContainerInterface $controllerManager, $requestedName, array $options = null)
+    public function __invoke(\Psr\Container\ContainerInterface $controllerManager, $requestedName, array $options = null)
     {
         /** @var ServiceLocatorInterface $serviceLocator */
         $serviceLocator = $controllerManager;
