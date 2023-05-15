@@ -40,7 +40,7 @@ return [
         'driver' => array(
             'eye4webzfcuserwarnings_entity' => array(
                 'class' => 'Doctrine\ORM\Mapping\Driver\XmlDriver',
-                'paths' => __DIR__ . '/doctrine_xml/eye4web/zfcuser/warnings'
+                'paths' => [__DIR__ . '/doctrine_xml/eye4web/zfcuser/warnings']
             ),
 
             'orm_default' => array(
