@@ -18,7 +18,7 @@
 
 namespace Eye4web\ZfcUser\Warnings\Mapper;
 
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectManager;
 use Eye4web\ZfcUser\Warnings\Entity\WarningInterface;
 use ZfcUser\Entity\UserInterface;
 use Zend\EventManager\EventManagerAwareInterface;

@@ -22,15 +22,15 @@ use Eye4web\ZfcUser\Warnings\View\Helper\ZfcUserDisplayNameByUserId;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
-class ZfcUserDisplayNameByUserIdFactory implements FactoryInterface
+class ZfcUserDisplayNameByUserIdFactory implements \Zend\ServiceManager\Factory\FactoryInterface
 {
     /**
      * {@inheritdoc}
      */
-    public function createService(ServiceLocatorInterface $viewHelperManager)
+    public function __invoke(\Psr\Container\ContainerInterface $viewHelperManager, $requestedName, array $options = null)
     {
         /** @var ServiceLocatorInterface $serviceLocator */
-        $serviceLocator = $viewHelperManager->getServiceLocator();
+        $serviceLocator = $viewHelperManager;
 
         $userMapper = $serviceLocator->get('zfcuser_user_mapper');
 

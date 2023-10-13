@@ -23,15 +23,15 @@ use Eye4web\ZfcUser\Warnings\Service\WarningsService;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
-class WarningsServiceFactory implements FactoryInterface
+class WarningsServiceFactory implements \Zend\ServiceManager\Factory\FactoryInterface
 {
     /**
      * {@inheritdoc}
      */
-    public function createService(ServiceLocatorInterface $serviceManager)
+    public function __invoke(\Psr\Container\ContainerInterface $assertionPluginManager, $requestedName, array $options = null)
     {
         /** @var MapperInterface $mapper */
-        $mapper = $serviceManager->get('Eye4web\ZfcUser\Warnings\Mapper');
+        $mapper = $assertionPluginManager->get('Eye4web\ZfcUser\Warnings\Mapper');
 
         $service = new WarningsService($mapper);
 
